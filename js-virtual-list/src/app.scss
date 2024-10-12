@@ -1,0 +1,13 @@
+.scroll-wrapper {
+  height: 100vh;
+  overflow-y: auto;
+
+  .list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    border-bottom: 1px solid #000;
+    font-size: 40px;
+  }
+}
