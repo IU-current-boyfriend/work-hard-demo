@@ -88,6 +88,7 @@ export function reactive(list) {
 
 function setEndIndex() {
   // [0, 8) => [startIndex, endIndex]
+  // 两屏优化白屏
   // const endIndex = $state.startIndex + MAX_ITEM_COUNT * 2;
   const endIndex = $state.startIndex + MAX_ITEM_COUNT;
 
@@ -99,6 +100,7 @@ export function setDataSource(init, count) {
 }
 
 export function setCurrentData() {
+  // 两屏优化白屏
   // const startIndex = resetStartIndex();
   $state.currentData = $state.dataSource.slice(
     $state.startIndex,
